@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>messenger &#8212; Messenger GB 001 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="client module" href="client.html" />
+    <link rel="prev" title="Welcome to Messenger GB’s documentation!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="lesson-8">
+<h1>messenger<a class="headerlink" href="#lesson-8" title="Permalink to this heading">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="client.html">client module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="client.html#client.Client"><code class="docutils literal notranslate"><span class="pre">Client</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.add_contact"><code class="docutils literal notranslate"><span class="pre">Client.add_contact()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.connection_init"><code class="docutils literal notranslate"><span class="pre">Client.connection_init()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.connection_lost"><code class="docutils literal notranslate"><span class="pre">Client.connection_lost</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.create_exit_message"><code class="docutils literal notranslate"><span class="pre">Client.create_exit_message()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.create_message"><code class="docutils literal notranslate"><span class="pre">Client.create_message()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.create_presence"><code class="docutils literal notranslate"><span class="pre">Client.create_presence()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.del_contact"><code class="docutils literal notranslate"><span class="pre">Client.del_contact()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.get_all_clients"><code class="docutils literal notranslate"><span class="pre">Client.get_all_clients()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.get_message_history"><code class="docutils literal notranslate"><span class="pre">Client.get_message_history()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.message_from_server"><code class="docutils literal notranslate"><span class="pre">Client.message_from_server()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.my_contacts"><code class="docutils literal notranslate"><span class="pre">Client.my_contacts</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.new_message"><code class="docutils literal notranslate"><span class="pre">Client.new_message</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.print_help"><code class="docutils literal notranslate"><span class="pre">Client.print_help()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.process_response_ans"><code class="docutils literal notranslate"><span class="pre">Client.process_response_ans()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.run"><code class="docutils literal notranslate"><span class="pre">Client.run()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.send_message"><code class="docutils literal notranslate"><span class="pre">Client.send_message()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="client.html#client.Client.user_interactive"><code class="docutils literal notranslate"><span class="pre">Client.user_interactive()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="client.html#client.ClientVerifier"><code class="docutils literal notranslate"><span class="pre">ClientVerifier</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="client.html#client.arg_parser"><code class="docutils literal notranslate"><span class="pre">arg_parser()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="client_gui.html">client_gui package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="client_gui.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client_gui.html#module-client_gui.add_contact_gui">client_gui.add_contact_gui module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="client_gui.html#client_gui.add_contact_gui.AddContactDialog"><code class="docutils literal notranslate"><span class="pre">AddContactDialog</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.add_contact_gui.AddContactDialog.client_contacts"><code class="docutils literal notranslate"><span class="pre">AddContactDialog.client_contacts()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="client_gui.html#module-client_gui.client_start_gui">client_gui.client_start_gui module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="client_gui.html#client_gui.client_start_gui.UserNameDialog"><code class="docutils literal notranslate"><span class="pre">UserNameDialog</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.client_start_gui.UserNameDialog.click"><code class="docutils literal notranslate"><span class="pre">UserNameDialog.click()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.client_start_gui.UserNameDialog.reg_user"><code class="docutils literal notranslate"><span class="pre">UserNameDialog.reg_user()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="client_gui.html#module-client_gui.main_window_gui">client_gui.main_window_gui module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.add_contact"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.add_contact()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.add_contact_action"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.add_contact_action()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.add_contact_window"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.add_contact_window()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.clear_message_window"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.clear_message_window()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.connection_lost"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.connection_lost()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.del_contacts"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.del_contacts()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.history_list_update"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.history_list_update()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.initUI"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.initUI()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.make_connection"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.make_connection()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.message"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.message()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.refresh_contacts"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.refresh_contacts()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.select_active_user"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.select_active_user()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.send_message"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.send_message()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.main_window_gui.ClientMainWindow.set_active_user"><code class="docutils literal notranslate"><span class="pre">ClientMainWindow.set_active_user()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="client_gui.html#module-client_gui.sign_up_window">client_gui.sign_up_window module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="client_gui.html#client_gui.sign_up_window.SignUpDialog"><code class="docutils literal notranslate"><span class="pre">SignUpDialog</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="client_gui.html#client_gui.sign_up_window.SignUpDialog.click"><code class="docutils literal notranslate"><span class="pre">SignUpDialog.click()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="client_gui.html#module-client_gui">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="common.html">common package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="common.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="common.html#module-common.utils">common.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="common.html#common.utils.get_msg"><code class="docutils literal notranslate"><span class="pre">get_msg()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="common.html#common.utils.log"><code class="docutils literal notranslate"><span class="pre">log()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="common.html#common.utils.send_msg"><code class="docutils literal notranslate"><span class="pre">send_msg()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="common.html#module-common.variables">common.variables module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="common.html#module-common">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="errors.html">errors module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="errors.html#errors.IncorrectDataRecivedError"><code class="docutils literal notranslate"><span class="pre">IncorrectDataRecivedError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html#errors.NonDictInputError"><code class="docutils literal notranslate"><span class="pre">NonDictInputError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html#errors.ReqFieldMissingError"><code class="docutils literal notranslate"><span class="pre">ReqFieldMissingError</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html#errors.ServerError"><code class="docutils literal notranslate"><span class="pre">ServerError</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="launcher.html">launcher module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logs.html">logs package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#module-logs.config_client_log">logs.config_client_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#module-logs.config_server_log">logs.config_server_log module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html#module-logs">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">server module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server_db.html">server_db module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="server_db.html#server_db.ServerStorage"><code class="docutils literal notranslate"><span class="pre">ServerStorage</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.Base"><code class="docutils literal notranslate"><span class="pre">ServerStorage.Base</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.Base.metadata"><code class="docutils literal notranslate"><span class="pre">ServerStorage.Base.metadata</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.Base.registry"><code class="docutils literal notranslate"><span class="pre">ServerStorage.Base.registry</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientContactDB"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientContactDB</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientContactDB.from_client"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientContactDB.from_client</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientContactDB.id"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientContactDB.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientContactDB.msg"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientContactDB.msg</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientContactDB.time"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientContactDB.time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientContactDB.to_client"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientContactDB.to_client</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientDB"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientDB</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientDB.id"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientDB.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientDB.info"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientDB.info</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientDB.login"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientDB.login</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientDB.passwd_hash"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientDB.passwd_hash</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientDB.pubkey"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientDB.pubkey</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientHistoryDB"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientHistoryDB</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientHistoryDB.client"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientHistoryDB.client</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientHistoryDB.entry_time"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientHistoryDB.entry_time</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientHistoryDB.id"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientHistoryDB.id</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="server_db.html#server_db.ServerStorage.ClientHistoryDB.ip_address"><code class="docutils literal notranslate"><span class="pre">ServerStorage.ClientHistoryDB.ip_address</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.add_user"><code class="docutils literal notranslate"><span class="pre">ServerStorage.add_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.check_user"><code class="docutils literal notranslate"><span class="pre">ServerStorage.check_user()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.del_in_contactdb"><code class="docutils literal notranslate"><span class="pre">ServerStorage.del_in_contactdb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.get_all_contacts_login"><code class="docutils literal notranslate"><span class="pre">ServerStorage.get_all_contacts_login()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.get_all_messages"><code class="docutils literal notranslate"><span class="pre">ServerStorage.get_all_messages()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.get_all_users"><code class="docutils literal notranslate"><span class="pre">ServerStorage.get_all_users()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.get_all_users_messages"><code class="docutils literal notranslate"><span class="pre">ServerStorage.get_all_users_messages()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.get_hash"><code class="docutils literal notranslate"><span class="pre">ServerStorage.get_hash()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.get_my_contacts"><code class="docutils literal notranslate"><span class="pre">ServerStorage.get_my_contacts()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="server_db.html#server_db.ServerStorage.insert_in_contactdb"><code class="docutils literal notranslate"><span class="pre">ServerStorage.insert_in_contactdb()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="server_gui.html">server_gui module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="server_gui.html#server_gui.ConfigWindow"><code class="docutils literal notranslate"><span class="pre">ConfigWindow</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="server_gui.html#server_gui.ConfigWindow.initUI"><code class="docutils literal notranslate"><span class="pre">ConfigWindow.initUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="server_gui.html#server_gui.HistoryMsgWindow"><code class="docutils literal notranslate"><span class="pre">HistoryMsgWindow</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="server_gui.html#server_gui.HistoryMsgWindow.initUI"><code class="docutils literal notranslate"><span class="pre">HistoryMsgWindow.initUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="server_gui.html#server_gui.MainWindow"><code class="docutils literal notranslate"><span class="pre">MainWindow</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="server_gui.html#server_gui.MainWindow.initUI"><code class="docutils literal notranslate"><span class="pre">MainWindow.initUI()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="server_gui.html#server_gui.create_messages_table"><code class="docutils literal notranslate"><span class="pre">create_messages_table()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="server_gui.html#server_gui.create_users_table"><code class="docutils literal notranslate"><span class="pre">create_users_table()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="unit_tests.html">unit_tests package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unit_tests.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit_tests.html#unit-tests-test-client-module">unit_tests.test_client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit_tests.html#unit-tests-test-server-module">unit_tests.test_server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit_tests.html#module-unit_tests.test_utils">unit_tests.test_utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass"><code class="docutils literal notranslate"><span class="pre">TestClass</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.client_socket"><code class="docutils literal notranslate"><span class="pre">TestClass.client_socket</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.msg_ok"><code class="docutils literal notranslate"><span class="pre">TestClass.msg_ok</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.response_error"><code class="docutils literal notranslate"><span class="pre">TestClass.response_error</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.response_ok"><code class="docutils literal notranslate"><span class="pre">TestClass.response_ok</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.server_socket"><code class="docutils literal notranslate"><span class="pre">TestClass.server_socket</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.setUp"><code class="docutils literal notranslate"><span class="pre">TestClass.setUp()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.tearDown"><code class="docutils literal notranslate"><span class="pre">TestClass.tearDown()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.test_client_server_msg"><code class="docutils literal notranslate"><span class="pre">TestClass.test_client_server_msg()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.test_get_200_from_server"><code class="docutils literal notranslate"><span class="pre">TestClass.test_get_200_from_server()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.test_get_400_from_server"><code class="docutils literal notranslate"><span class="pre">TestClass.test_get_400_from_server()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.test_msg_from_server_not_dict"><code class="docutils literal notranslate"><span class="pre">TestClass.test_msg_from_server_not_dict()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="unit_tests.html#unit_tests.test_utils.TestClass.test_wrong_msg_from_client"><code class="docutils literal notranslate"><span class="pre">TestClass.test_wrong_msg_from_client()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="unit_tests.html#module-unit_tests">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Messenger GB</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">messenger</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="client.html">client module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="client_gui.html">client_gui package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="common.html">common package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="errors.html">errors module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="launcher.html">launcher module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html">logs package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html">server module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server_db.html">server_db module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="server_gui.html">server_gui module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unit_tests.html">unit_tests package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Welcome to Messenger GB’s documentation!</a></li>
+      <li>Next: <a href="client.html" title="next chapter">client module</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2022, Redkin Ivan.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
